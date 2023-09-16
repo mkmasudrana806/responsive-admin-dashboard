@@ -294,7 +294,7 @@ body {
 
 .view-all-btn {
   position: relative;
-  padding: 10px 15px;
+  padding: 7px 10px;
   display: block;
   background: var(--blue);
   text-decoration: none;
@@ -302,53 +302,53 @@ body {
   border-radius: 6px;
 }
 
-.details table{
+.details table {
   width: 100%;
   border-collapse: collapse;
   margin-top: 10px;
 }
 
-.details table thead td{
+.details table thead td {
   font-weight: 600;
 }
 
-.details .recentOrders table tr{
+.details .recentOrders table tr {
   color: var(--black1);
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 
-.details .recentOrders table tr:last-child{
+.details .recentOrders table tr:last-child {
   border-bottom: none;
 }
 
-.details .recentOrders table tbody tr:hover{
+.details .recentOrders table tbody tr:hover {
   background: var(--blue);
   color: var(--white);
 }
 
-.details .recentOrders table tr td{
+.details .recentOrders table tr td {
   padding: 10px;
 }
 
-.details .recentOrders table tr td:last-child{
+.details .recentOrders table tr td:last-child {
   text-align: end;
 }
-.details .recentOrders table tr td:nth-child(2){
+.details .recentOrders table tr td:nth-child(2) {
   text-align: end;
 }
-.details .recentOrders table tr td:nth-child(3){
+.details .recentOrders table tr td:nth-child(3) {
   text-align: end;
 }
 
-.status.delivered{
+.status.delivered {
   padding: 2px 4px;
-  background: #Bde02c;
+  background: #bde02c;
   color: var(--white);
   border-radius: 4px;
   font-size: 14px;
   font-weight: 500;
 }
-.status.pending{
+.status.pending {
   padding: 2px 4px;
   background: #f9ca3f;
   color: var(--white);
@@ -356,7 +356,7 @@ body {
   font-size: 14px;
   font-weight: 500;
 }
-.status.return{
+.status.return {
   padding: 2px 4px;
   background: #f00;
   color: var(--white);
@@ -364,11 +364,63 @@ body {
   font-size: 14px;
   font-weight: 500;
 }
-.status.inprogress{
+.status.inprogress {
   padding: 2px 4px;
   background: #1795ce;
   color: var(--white);
   border-radius: 4px;
   font-size: 14px;
   font-weight: 500;
+}
+
+/* ################ Recents Customers #################### */
+
+.recentCustomers {
+  position: relative;
+  display: grid;
+  min-height: 500px;
+  padding: 20px;
+  background: var(--white);
+  box-shadow: 0 7px 25px rgba(0, 0, 0, 0, 0.08);
+  border-radius: 20px;
+}
+
+.recentCustomers .imgBox {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.recentCustomers .imgBox img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.recentCustomers table tr:hover {
+  background: var(--blue);
+  color: var(--white);
+}
+
+.recentCustomers table tr td {
+  padding: 8px 10px;
+}
+
+.recentCustomers table tr td h4 {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.2em;
+}
+
+.recentCustomers table tr td span {
+  font-size: 14px;
+  color: var(--black2);
+}
+
+.recentCustomers table tr:hover td span {
+  color: var(--white);
 }
